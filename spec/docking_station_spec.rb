@@ -10,5 +10,5 @@ require 'docking_station'
 # end
 
 describe DockingStation do 
-    it { is_expected.to respond_to(:release_bike)}
+    it { is_expected.to respond_to :release_bike}
 end    
