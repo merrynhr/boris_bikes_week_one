@@ -14,12 +14,12 @@ describe DockingStation do
 
     it { is_expected.to respond_to :dock_bike}
 
-    it "returns bike to dock" do 
-        docking_station = DockingStation.new
-        bike = Bike.new
-        expect(docking_station.dock_bike(bike)).to eq(bike) 
-    end
+    # it "returns bike to dock" do 
+    #     docking_station = DockingStation.new
+    #     bike = Bike.new
+    #     expect(docking_station.dock_bike(bike)).to eq(bike) 
+    # end
+    it { is_expected.to respond_to(:dock_bike).with(1).arguement}
 end    
-
 
 
