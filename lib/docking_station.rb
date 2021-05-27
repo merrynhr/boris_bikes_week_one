@@ -1,7 +1,12 @@
 # require_relative bike.rb
 require 'bike'
+
+#DEFAULT_CAPACITY = 20
+
 class DockingStation
   attr_reader :bike_no
+  
+  DEFAULT_CAPACITY = 20
 
    def initialize
      @bike_no = [] 
@@ -21,7 +26,7 @@ class DockingStation
    private 
 
    def full?
-     if @bike_no.length >= 20
+     if @bike_no.length >= DEFAULT_CAPACITY
        true
      else
        false
