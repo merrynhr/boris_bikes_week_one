@@ -45,7 +45,10 @@ describe DockingStation do
       end   
     end
 
-   
+   it 'has a 50 bike capacity when given an argument of 50' do
+    docking_station = DockingStation.new(50)
+    expect(docking_station.capacity).to eq(50)
+   end
 
 end 
 
